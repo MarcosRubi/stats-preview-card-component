@@ -1,0 +1,37 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Frontend Mentor | Stats preview card component.">
+	<main class=" p-8 grid place-items-center min-h-screen" >
+		<div class="flex flex-col md:flex-row-reverse max-w-[480px] md:max-w-4xl mx-auto bg-dark-blue rounded-lg overflow-hidden hover:scale-110 transition-all duration-500 hover:shadow-md shadow-parahgraph cursor-pointer" >
+			<div class="relative basis-full">
+				<picture>
+					<source media="(min-width:768px)" srcset="images/image-header-desktop.jpg">
+					<img src="images/image-header-mobile.jpg" alt="Image people type code" class="flex min-h-full object-cover">
+				</picture>
+				<div class="absolute w-full top-0 left-0 bg-soft-violet h-full opacity-70"></div>
+			</div>
+			<div class="text-center md:text-start py-10 px-3 md:px-10">
+				<h1 class="font-semibold text-3xl">Get <span class="text-soft-violet">insights</span> that help your business grow.</h1>
+				<p class="text-parahgraph py-5">
+					Discover the benefits of data analytics and make better decisions regarding revenue, customer experience, and overall efficiency.
+				</p>
+				<ul class="flex flex-col md:flex-row justify-between">
+					<li class="py-3">
+						<p class="font-bold text-2xl">10k+</p>
+						<span class="text-opacity-50 uppercase text-xs">companies</span>
+					</li>
+					<li class="py-3">
+						<p class="font-bold text-2xl">314</p>
+						<span class="text-opacity-50 uppercase text-xs">templates</span>
+					</li>
+					<li class="py-3">
+						<p class="font-bold text-2xl">12M+</p>
+						<span class="text-opacity-50 uppercase text-xs">queries</span>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</main>
+</Layout>
